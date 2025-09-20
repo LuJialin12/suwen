@@ -4,12 +4,15 @@ import re, sys
 
 # 使い方: python scripts/validate_ids.py content/ch01/text.md
 p = Path(sys.argv[1])
-id_pat = re.compile(r'^\[(L\d{4}[a-z]?)\]\s')
+
+# chXX-YYYY の形式 (末尾に a,b など1文字つく可能性も許容)
+id_pat = re.compile(r'^\[(ch\d{2}-\d{4}[a-z]?)\]\s')
 
 seen = set()
 ok = True
+
 for i, ln in enumerate(p.read_text(encoding="utf-8").splitlines(), 1):
-    if not ln.strip():
+    if not ln.strip():  # 空行は無視
         continue
     m = id_pat.match(ln)
     if not m:
