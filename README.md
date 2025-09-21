@@ -62,14 +62,38 @@ This project organizes the classical Chinese medical text *Huangdi Neijing* from
 ## 📂 ディレクトリ構成 / Directory Structure
 
 ```
-content/
- ├── ch01/
- │   ├── text.md
- │   ├── translation.md
- │   └── commentary/
- │       ├── wangbing.md
- │       └── modern.md
- └── ch02/ ...
+suwen/
+├─ content/
+│  ├─ ch01/
+│  │  ├─ text.md          # 原文（各行に [L0001] のID付き）
+│  │  ├─ translation.md   # 現代語訳
+│  │  ├─ notes.md         # 自分の補足メモ
+│  │  ├─ index.md         # 自動生成された統合ビュー
+│  │  └─ commentary/
+│  │     ├─ wangbing.md   # 王冰注（行ID参照）
+│  │     └─ modern.md     # 現代注（行ID参照）
+│  ├─ ch02/
+│  │  ├─ text.md
+│  │  ├─ translation.md
+│  │  ├─ notes.md
+│  │  ├─ index.md
+│  │  └─ commentary/
+│  │     └─ modern.md
+│  └─ ...
+├─ drafts/                 # 下書き用
+├─ figures/                # 図版（例: ch01-fig1.png）
+├─ output/                 # PDF/EPUBなど生成物
+├─ references/             # 文献リスト（例: bibliography.md）
+├─ template/
+│  └─ chapter/             # 新章の雛形 (text.md, commentary/, notes.md など)
+├─ scripts/                # ユーティリティスクリプト
+│  ├─ add_ids.py           # text.md に行IDを振る（初回）
+│  ├─ validate_ids.py      # IDの重複/順序チェック
+│  └─ assemble.py          # 原文＋注釈を index.md に統合
+├─ README.md
+├─ LICENSE
+└─ .gitignore              # 例: .DS_Store 除外
+
 ```
 
 ---
