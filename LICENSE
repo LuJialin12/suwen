@@ -1,6 +1,10 @@
-MIT License
+Copyright (c) 2025 Lu Jialin
 
-Copyright (c) 2025 LuJialin
+本プロジェクトは「コード部分」と「翻訳・注釈・原文テキスト部分」でライセンスが異なります。
+
+-----------------------
+【ソフトウェア（コード）部分】
+MIT License
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +23,13 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+-----------------------
+【翻訳・注釈・原文テキスト部分】
+Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+
+このプロジェクト内の翻訳文、注釈、原文テキストは、クリエイティブ・コモンズ 表示-継承 4.0 国際 ライセンスの下に提供されています。
+https://creativecommons.org/licenses/by-sa/4.0/
+
+このライセンスの下では、出典を明記すれば、商用・非商用を問わず、複製・翻案・再配布が可能です。
+ただし、派生物を作成した場合は同じライセンスで再配布する必要があります。
